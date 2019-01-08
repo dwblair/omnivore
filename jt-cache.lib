@@ -1,0 +1,195 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Connector:Conn_01x02
+#
+DEF Connector:Conn_01x02 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector:Conn_01x02" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# device:C
+#
+DEF device:C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "device:C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# device:D
+#
+DEF device:D D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "device:D" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *SingleDiode
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 50 -50 -50 N
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# device:LED
+#
+DEF device:LED D 0 40 Y N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "device:LED" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ LED*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# device:R
+#
+DEF device:R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "device:R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# device:Transformer_1P_1S
+#
+DEF device:Transformer_1P_1S T 0 40 Y N 1 F N
+F0 "T" 0 250 50 H V C CNN
+F1 "device:Transformer_1P_1S" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+A -100 -150 50 899 1 0 1 0 N -100 -100 -50 -150
+A -100 -150 50 -1 -899 0 1 0 N -50 -150 -100 -199
+A -100 -50 50 899 1 0 1 0 N -100 0 -50 -50
+A -100 -50 50 -1 -899 0 1 0 N -50 -50 -100 -99
+A -100 50 50 899 1 0 1 0 N -100 100 -50 50
+A -100 50 50 -1 -899 0 1 0 N -50 50 -100 1
+A -100 150 50 899 1 0 1 0 N -100 200 -50 150
+A -100 150 50 -1 -899 0 1 0 N -50 150 -100 101
+A 100 -50 50 899 -1799 0 1 0 N 100 0 51 -50
+A 100 -50 50 1799 -899 0 1 0 N 51 -50 100 -99
+A 100 50 50 899 -1799 0 1 0 N 100 100 51 50
+A 100 50 50 1799 -899 0 1 0 N 51 50 100 1
+A 100 150 50 899 -1799 0 1 0 N 100 200 51 150
+A 100 150 50 1799 -899 0 1 0 N 51 150 100 101
+A 101 -150 50 910 -1799 0 1 0 N 101 -100 52 -150
+A 101 -150 50 -912 -1799 0 1 0 N 101 -199 52 -150
+P 2 0 1 0 -25 200 -25 -200 N
+P 2 0 1 0 25 -200 25 200 N
+X AA 1 -400 200 300 R 50 50 1 1 P
+X AB 2 -400 -200 300 R 50 50 1 1 P
+X SA 3 400 -200 300 L 50 50 1 1 P
+X SB 4 400 200 300 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_DC-DC-Converters:V7805-1000
+#
+DEF dk_DC-DC-Converters:V7805-1000 U 0 20 Y Y 1 F N
+F0 "U" -250 250 60 H V L CNN
+F1 "dk_DC-DC-Converters:V7805-1000" 50 -200 60 H V L CNN
+F2 "digikey-footprints:3-SIP_Module_V7805-1000" 200 200 60 H I L CNN
+F3 "https://www.cui.com/product/resource/digikeypdf/v78xx-1000.pdf" 200 300 60 H I L CNN
+F4 "102-1715-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "V7805-1000" 200 500 60 H I L CNN "MPN"
+F6 "Power Supplies - Board Mount" 200 600 60 H I L CNN "Category"
+F7 "DC DC Converters" 200 700 60 H I L CNN "Family"
+F8 "https://www.cui.com/product/resource/digikeypdf/v78xx-1000.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/cui-inc/V7805-1000/102-1715-ND/1828608" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "DC DC CONVERTER 5V 5W" 200 1000 60 H I L CNN "Description"
+F11 "CUI Inc." 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -250 200 250 -150 0 1 0 f
+X Vin+ 1 -400 100 150 R 50 50 1 1 W
+X GND 2 0 -300 150 U 50 50 1 1 W
+X Vo+ 3 400 100 150 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# dk_Transistors-Bipolar-BJT-Single:2N3904-AP
+#
+DEF dk_Transistors-Bipolar-BJT-Single:2N3904-AP Q 0 0 Y Y 1 F N
+F0 "Q" -126 166 60 H V L CNN
+F1 "dk_Transistors-Bipolar-BJT-Single:2N3904-AP" 206 0 60 V V C CNN
+F2 "digikey-footprints:TO-92-3_Formed_Leads" 200 200 60 H I L CNN
+F3 "http://www.mccsemi.com/up_pdf/2N3904(TO-92).pdf" 200 300 60 H I L CNN
+F4 "2N3904-APCT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "2N3904-AP" 200 500 60 H I L CNN "MPN"
+F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
+F7 "Transistors - Bipolar (BJT) - Single" 200 700 60 H I L CNN "Family"
+F8 "http://www.mccsemi.com/up_pdf/2N3904(TO-92).pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/micro-commercial-co/2N3904-AP/2N3904-APCT-ND/950591" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "TRANS NPN 40V 0.2A TO92" 200 1000 60 H I L CNN "Description"
+F11 "Micro Commercial Co" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C 0 0 128 0 1 0 f
+P 2 0 1 0 -150 0 -100 0 N
+P 2 0 1 0 -140 0 0 0 N
+P 2 0 1 0 0 -50 100 -100 N
+P 2 0 1 0 0 50 100 100 N
+P 2 0 1 0 0 100 0 -100 N
+P 4 0 1 0 60 -50 80 -90 40 -100 60 -50 F
+X E 1 100 -200 100 U 50 50 1 1 P
+X B 2 -200 0 100 R 50 50 1 1 I
+X C 3 100 200 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
